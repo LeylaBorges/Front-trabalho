@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 import ListUserComponent from "./ListUserComponent";
 import AddUserComponent from "./AddUserComponent";
 
@@ -10,10 +10,10 @@ const AppRouter = () =>{
             <Router>
                 <div className="col-md-6">
                     <h1 className="text-center" style={style}>Mycosmeticos</h1>
-                    <Switch>
+                    <Routes>
                         <Route path="/" exact component={ListUserComponent}/>
                         <Route path="/add" element={<AddUserComponent/>}/>
-                    </Switch>
+                    </Routes>
                 </div>
             </Router>
         </div>
